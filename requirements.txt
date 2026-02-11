@@ -1,0 +1,9 @@
+torch
+numpy
+tqdm
+matplotlib
+transformers
+datasets
+tokenizers
+pyyaml
+streamlit

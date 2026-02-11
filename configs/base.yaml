@@ -1,0 +1,27 @@
+project_name: mini_transformer_lm
+
+dataset:
+  name: tinystories
+  split_train: train
+  split_val: validation
+  max_length: 128
+
+model:
+  n_layers: 4
+  n_heads: 4
+  d_model: 256
+  d_ff: 1024
+  dropout: 0.1
+
+train:
+  batch_size: 64
+  lr: 3e-4
+  weight_decay: 0.1
+  epochs: 3
+  eval_every_steps: 200
+  seed: 42
+
+generate:
+  max_new_tokens: 120
+  temperature: 0.9
+  top_k: 50
